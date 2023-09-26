@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Fugaz+One&display=swap');
+
+:root{
+    --color: rgb(67, 255, 196);
+}
+
+body{
+    background-color: black;
+    color: aliceblue;
+}
+/* Caja */
+section{
+    width: 90%;
+    max-width: 1600px;
+    height: 625px;
+    margin: 0% auto;
+    border: 2px solid var(--color);
+    margin: 100px;
+}
+
+/* Fila */
+.fila{
+    display: flex;
+    width: 100%;
+}
+
+/*Img */
+.img{
+    width: 35%;
+}
+
+.contenido{
+    width: 65%;
+}
+.contenido h2{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--color);
+    margin: 24px 10px 0px;
+    font-family: 'Fugaz One', cursive;
+}
+
+.contenido h1{
+    font-size: 65px;
+    margin: 0% 10px;
+    font-weight: 600;
+    font-family: 'Fugaz One', cursive;
+}
+
+/* Detalle */
+.detalle{
+    width: 195px;
+    height: 3px;
+    margin-bottom: 50px;
+    background-color: var(--color);
+}
+
+/* Parrafo */
+.contenido p{
+    width: 90%;
+    font-size: 22px;
+    margin: 10px;
+    font-family: 'Dosis', sans-serif;
+    /* font-family: 'Fugaz One', cursive; */
+}
+
+/* datos */
+
+.datos{
+    border: 1px solid var(--color);
+    margin: 20px 10px ;
+    width: 87%;
+    height: 170px;
+}
+
+.datos ul li{
+    list-style: none;
+    display: inline-block;
+    width: 48%;
+    margin-bottom: 34px;
+}
+
+/* Contacto */
+
+.contacto a{
+    margin: 10px;
+}

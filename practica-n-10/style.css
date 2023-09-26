@@ -1,0 +1,148 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+
+.nav{
+    position: fixed;
+    top: 0%;
+    width: 350px;
+    height: 100vh;
+    background-color: azure;
+    transform: translateX(-350px);
+    transition: all .3s;
+}
+@media screen and (min-width: 768px){
+    .nav{
+        transform: translateX(-300px);
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .nav{
+        transform: translateX(0);
+    }
+}
+
+.nav--show{
+    transform: translateX(-300px);
+}
+
+
+/* _______________________ */
+.nav--show .toggle-menu{
+    left: 290px;
+    top: 0%;
+    color: #333;
+}
+
+
+.toggle-menu{
+    position: absolute;
+    top: 0%;
+    left: 350px;
+    font-size: 2rem;
+    color: azure;
+    width: 25px;
+    height: 25px;
+    padding: 1rem;
+    /* margin-top: 20px; */
+    z-index: 100;
+    margin-bottom: 20px;
+    /* background-color: blue; */
+}
+@media screen and (min-width: 768px){
+    .toggle-menu{
+        display: none;
+    }
+}
+/* ______________ */
+
+.main{
+    margin-left: 0;
+    padding-top: 2.5rem ;
+    min-height: 100vh;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    overflow: hidden;
+}
+@media screen and (min-width: 768px){
+    .main{
+        margin-left: 50px;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main{
+        margin-left: 350px;
+    }
+}
+
+
+/* ___________________________________ */
+
+.main-menu{
+    padding-left: 0%;
+}
+
+/*  */
+.main-menu--show{
+    transform: translateX(260px);
+}
+.main-menu--show .main-menu__item{
+    transform: translateX(-300px);
+}
+.main-menu--show .main-menu__icon{
+    transform: translateX(300px);
+    color: aqua;
+}
+
+/*  */
+
+.main-menu__item{
+    display: flex;
+    align-items:center;
+    margin-top: 50px;
+    font-size: 26px;
+}
+
+.main-menu__link{
+    width: 200px;
+    /* margin: 50px 0; */
+    padding: 20px 32px;
+    border-radius: 0 10px 10px 0;
+    background-color: royalblue;
+    text-decoration: none;
+    color: azure;
+    /* padding: 0 5px; */
+}
+.main-menu__icon{
+    margin: 0 20px 0 20px;
+}
+
+
+
+@media screen and (min-width: 768px){
+    .main-menu__icon{
+        transform: translateX(260px);
+        color: rgb(40, 38, 38);
+        
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .main-menu__icon{
+        transform: translateX(0);
+        color: azure;
+        /* margin-top: 20px; */
+    }
+}
+
+
+/*  */
+

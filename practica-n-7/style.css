@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    margin: 0%;
+    font-family: sans-serif
+}
+
+header{
+    background-color: rgb(254, 145, 145);
+    width: 100%;
+    /* display: flex; */
+}
+
+.div-del-menu-principal{
+    display: flex;
+}
+/* .logo{
+    width: 10px;
+}  */
+.img-logo{
+    width: 70px;
+    /* display: flex; */
+}
+
+
+
+
+#btn-menu{
+    display: none;
+}
+
+header label img{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 6px;
+    border-right: 1px solid white;
+
+}
+
+header label:hover{
+    cursor: pointer;
+} 
+
+/* ______________ */
+
+
+
+.menu ul{
+    display: flex;
+    
+    margin: 0;
+    list-style: none;
+    padding: 0%;
+}
+
+
+.menu li{
+    border-right: 1px solid white;
+}
+
+.menu li:hover{
+    background-color: rgba(0,0,0,0.2);
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: rgb(254, 254, 254);
+    text-decoration: none;    
+}
+
+@media(max-width:768px) {
+    header label img{
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: rgb(254, 145, 145);
+        margin-left: -100%;
+        transition: all 0.8s;
+    }
+
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid white;
+    }
+
+    #btn-menu:checked ~ .menu{
+        margin: 0%;
+    }
+
+}

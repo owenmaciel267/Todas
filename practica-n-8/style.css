@@ -1,0 +1,163 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    background: url(./imgs/f3.jpg) no-repeat center fixed;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body::before{
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(66, 1, 70) 20%, transparent);
+    z-index: 1;
+}
+
+.card{
+    z-index: 100;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    width: 300px;
+    height: 460px;
+    background: black;
+    overflow: hidden;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+.poster{
+    position: relative;
+    overflow: hidden; 
+}
+.poster::before{
+    content: "";
+    position: absolute;
+    bottom: -200px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgb(27, 26, 26) 70%, transparent);
+    transition: 0.6s;
+    z-index: 1;
+}
+img{
+    object-fit: cover;
+    width: 100%;
+    transition: 0.5s;
+}
+.details{
+    position:absolute;
+    padding: 20px;
+    width: 100%;
+    height: 85%;
+    bottom: -200px;  
+    left: 0%;
+    transition: 0.6s;
+    z-index: 2;
+}
+.imgcontent{
+    color: aliceblue;
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px;
+    text-align: start;
+}
+.imgcontent img{
+    width: 70%;
+}
+.imgcontent span{
+    font-size: 14px;
+    color: rgb(222, 232, 241);
+}
+.rating{
+    position: relative;
+    padding: 5px 0px;
+}
+.rating i{
+    color: yellow;
+    margin-right: 2px;
+    font-size: 16px;
+}
+.rating span{
+    color: aliceblue;
+    padding: 0% 5px;
+
+}
+.tags{
+    position: relative;
+    margin-top: 5px;
+
+}
+.tags span{
+    padding:2px 5px ;
+    margin-right: 2px;
+    color: aliceblue;
+    display: inline-block;
+    border-radius: 4px;
+}
+.fantasy 
+,.mystery{
+    background:linear-gradient( rgb(35, 2, 248,0.8), rgb(23, 22, 22))
+}
+.info{
+    color: aliceblue;
+}
+.info p{
+    margin: 15px 0 10px ;
+}
+
+/* .card:hover .poster::before {
+    bottom: 0px;
+    z-index: 1;
+
+} */
+/* .card:hover .portada{
+    filter: blur(3px);
+    transform: translateY(-60px);
+    box-shadow: 1px 1px 50px rgb(2, 2, 2);
+}  */
+
+.info{
+    position: relative;
+}
+.info h4{
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px;
+    color: aliceblue;
+}
+.info ul{
+    margin: 10px 0 0;
+    padding: 0%;
+    display: flex;
+}
+.info li{
+    list-style: none;
+    width: 100px;
+    height: 100px;
+    padding: 0 10px 5px;
+    border-radius: 20px;
+}
+
+.cast img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+.card:hover .details{  
+    position: absolute;
+    bottom: 15%;
+} 

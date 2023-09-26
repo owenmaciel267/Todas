@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    box-sizing: border-box;
+}
+/* body{
+    background-color: rgb(31, 30, 30);
+    
+} */
+.header{
+    /* background-color: black; */
+    width: 100%;
+    height: 100vh;
+    background-image: url(/images.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.nav{
+    /* background-color: aliceblue; */
+    color: rgb(0, 129, 241);
+    /* background-image: url(/practica-n-4/images.jpg); */
+    width: 600px;
+    height: 50px;
+    /* display: flex; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.nav li{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+    margin-top: 40px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: rgb(206, 227, 246);
+}

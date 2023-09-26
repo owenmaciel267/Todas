@@ -1,0 +1,35 @@
+
+.accordion{
+    background-color: azure;
+    width: 80%;
+    padding: 1.5rem;
+    margin: 60px auto;
+    max-width: 500px;
+    box-shadow: 0 0 10px -3px rgb(0, 0, 0, .5);
+    border-radius: 6px;
+    border-left: 4px solid violet;
+}
+input{
+    display: none;
+}
+
+.accordion__link{
+    display: inline-block;
+    color: violet;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.accordion__item{
+    display: grid;
+    grid-template-rows: var(--rows, 0fr);
+    transition:  .3s grid-template-rows;
+}
+
+p{
+    overflow: hidden;
+}
+.accordion:has(:checked){
+    --rows: 3fr;
+}

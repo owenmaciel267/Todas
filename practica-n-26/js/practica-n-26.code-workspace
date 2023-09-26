@@ -1,0 +1,23 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"editor.fontLigatures": true,
+		"editor.fontVariations": true,
+		"markdown.preview.fontSize": 18,
+		"editor.fontSize": 18,
+		"editor.formatOnType": true,
+		"markdown.preview.fontFamily": "-apple-system, BlinkMacSystemFont, 'Segoe WPC', 'Segoe UI', system-ui, 'Ubuntu', 'Droid Sans', sans-serif",
+		"editor.codeLensFontFamily": "Consolas, 'Courier New', monospace",
+		"terminal.integrated.fontWeightBold": "bold",
+		"terminal.integrated.fontFamily": "Consolas, 'Courier New', monospace",
+		"editor.fontWeight": "normal",
+		"editor.codeLensFontSize": 18,
+		"editor.inlayHints.fontSize": 18,
+		"editor.suggestFontSize": 18,
+		"editor.fontFamily": "'Gill Sans',"
+	}
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Filtro con buscador</title>
+</head>
+<body>
+
+    <!-- Buscador -->
+    <div class="wrapper">
+        <div id="search-container">
+            <input 
+                type="search"
+                id="search-input"   
+                placeholder="Buscar"
+            >
+            <button id="search">Search</button>
+        </div>
+    </div>
+
+    <!-- filtro -->
+    <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Comida')">Comida</button>
+        <button class="button-value" onclick="filterProduct('Autos')">Autos</button>
+        <button class="button-value" onclick="filterProduct('Casas')">Casas</button>
+        <button class="button-value" onclick="filterProduct('Vuelos')">Vuelo</button>
+    </div>
+
+    <div id="products"></div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
